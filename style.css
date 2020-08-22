@@ -20,7 +20,7 @@ p {
   text-align: center;
   font-family: 'Indie Flower', cursive;
   /* font-family: 'Kalam', cursive; */
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 20px 0;
 }
 
@@ -45,6 +45,10 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+  .title-wrapper {
+    font-size: 2rem;
+  }
+
   .text-wrapper {
     font-size: 0.8rem;
     padding-left: 20px;
@@ -55,7 +59,7 @@ p {
   }
 
   .flower-wrapper {
-    top: -100px;
+    top: -120px;
   }
 }
 
