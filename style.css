@@ -22,6 +22,7 @@ p {
   /* font-family: 'Kalam', cursive; */
   font-size: 3rem;
   padding: 20px 0;
+  color:white;
 }
 
 .paragraphs-wrapper {
@@ -36,6 +37,7 @@ p {
   /* font-family: 'Kalam', cursive; */
   font-size: 1.3rem;
   padding-bottom: 20px;
+  color: white;
 }
 
 .flower-wrapper {
