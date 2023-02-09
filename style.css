@@ -6,6 +6,14 @@ p {
   margin: 0;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
 .content-wrapper {
   height: 90%;
   background-color: transparent;
@@ -14,30 +22,31 @@ p {
   align-items: center;
 }
 
-.title-wrapper {
-  position: relative;
-  z-index: 999;
-  text-align: center;
-  font-family: 'Indie Flower', cursive;
-  /* font-family: 'Kalam', cursive; */
-  font-size: 3rem;
-  padding: 20px 0;
-  color:white;
-}
-
 .paragraphs-wrapper {
   width: fit-content;
 }
 
 .text-wrapper {
-  z-index: 999;
-  position:relative;
-  font-family: 'Indie Flower', cursive;
   font-weight: 600;
-  /* font-family: 'Kalam', cursive; */
-  font-size: 1.3rem;
+  font-size: 1.8rem;
+  font-family: "Kalam", cursive;
   padding-bottom: 20px;
   color: white;
+}
+
+.author {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-family: "Kalam", cursive;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.author > p {
+  width: fit-content;
 }
 
 .flower-wrapper {
@@ -52,7 +61,7 @@ p {
   }
 
   .text-wrapper {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     padding-left: 20px;
   }
 
@@ -65,7 +74,7 @@ p {
   }
 }
 
-body{
+body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -79,28 +88,28 @@ body{
 svg {
   height: 80vh;
   width: 100%;
-  opacity: 0.7
+  opacity: 0.7;
 }
 
 #illustration {
-   animation: squigglevision 0.5s infinite alternate;
+  animation: squigglevision 0.5s infinite alternate;
 }
 
 @keyframes squigglevision {
   0% {
-    filter: url('#sketch-0');
+    filter: url("#sketch-0");
   }
   25% {
-    filter: url('#sketch-1');
+    filter: url("#sketch-1");
   }
   50% {
-    filter: url('#sketch-2');
+    filter: url("#sketch-2");
   }
   75% {
-    filter: url('#sketch-3');
+    filter: url("#sketch-3");
   }
   100% {
-    filter: url('#sketch-4');
+    filter: url("#sketch-4");
   }
 }
 
@@ -116,7 +125,7 @@ svg {
 
 @keyframes paint {
   from {
-    stroke-dashoffset: 1; 
+    stroke-dashoffset: 1;
   }
   to {
     stroke-dashoffset: 0;
